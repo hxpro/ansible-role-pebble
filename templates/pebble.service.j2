@@ -1,0 +1,12 @@
+[Unit]
+Description=Small ACME-12 test server
+After=syslog.target
+After=network.target
+
+[Service]
+RestartSec=2s
+Type=simple
+ExecStart={{ go_path }}/bin/pebble
+WorkingDirectory={{ go_path }}/src/github.com/letsencrypt/pebble/
+Restart=always
+Environment=GOPATH={{ go_path }}
