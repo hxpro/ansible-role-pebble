@@ -1,0 +1,8 @@
+---
+- name: Install pebble
+  shell: |
+    export GOPATH="{{ go_path }}"
+    go get -u github.com/letsencrypt/pebble/...
+    cd "$GOPATH/src/github.com/letsencrypt/pebble"
+    go install ./...
+  creates: '{{ go_path }}/bin/pebble'
