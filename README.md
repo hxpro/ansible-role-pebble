@@ -13,7 +13,7 @@ pebble_certificate: '{{ go_path }}/src/github.com/letsencrypt/pebble/test/certs/
 pebble_key: '{{ go_path }}/src/github.com/letsencrypt/pebble/test/certs/localhost/key.pem'
 pebble_http_port: 80
 pebble_tls_port: 443
-
+# pebble_dnsserver: 192.168.0.1
 ```
 
 Dependencies
