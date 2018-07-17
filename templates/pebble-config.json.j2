@@ -1,0 +1,9 @@
+{
+  "pebble": {
+    "listenAddress": "{{ pebble_listen }}",
+    "certificate": "{{ pebble_certificate }}",
+    "privateKey": "{{ pebble_key }}",
+    "httpPort": {{ pebble_http_port | int }},
+    "tlsPort": {{ pebble_tls_port | int }}
+  }
+}
