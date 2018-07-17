@@ -9,4 +9,4 @@ Type=simple
 ExecStart={{ go_path }}/bin/pebble{{ ' -dnsserver ' ~ pebble_dnsserver if pebble_dnsserver is defined else '' }} -config {{ pebble_config_file }}
 WorkingDirectory={{ go_path }}/src/github.com/letsencrypt/pebble/
 Restart=always
-Environment=GOPATH={{ go_path }} PEBBLE_VA_ALWAYS_VALID={{ pebble_always_valid | bool }}
+Environment=GOPATH={{ go_path }} PEBBLE_VA_ALWAYS_VALID={{ pebble_always_valid | bool }} PEBBLE_WFE_NONCEREJECT={{ pebble_nonce_reject | int }}

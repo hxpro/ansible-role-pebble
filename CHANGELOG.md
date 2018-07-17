@@ -2,8 +2,9 @@
 
 ## [Unreleased]
 ### Added
-- always valid
-- custom dnsserver
-- pebble-config
-- systemd service
+- Invalid Anti-Replay Nonce Errors
+- Skipping Validation
+- DNS Server
+- pebble-config.json
+- pebble.service
 - install pebble

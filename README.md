@@ -14,6 +14,7 @@ pebble_key: '{{ go_path }}/src/github.com/letsencrypt/pebble/test/certs/localhos
 pebble_http_port: 80
 pebble_tls_port: 443
 pebble_always_valid: false
+pebble_nonce_reject: 15
 # pebble_dnsserver: 192.168.0.1
 ```
 
